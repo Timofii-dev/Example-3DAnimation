@@ -1,6 +1,6 @@
-# Example-3DAnimation
+# Veltris Motors
 
-Short landing page / 3D showcase for a Porsche Panamera-style car presentation.
+Short landing page / 3D showcase for a Porsche Panamera car presentation.
 
 ## Tech Stack
 
@@ -10,35 +10,7 @@ Short landing page / 3D showcase for a Porsche Panamera-style car presentation.
 - GSAP + ScrollTrigger
 - ESLint
 
-## Run Locally
-
-```bash
-npm install
-npm run dev
-```
-
-## Scripts
-
-- `npm run dev` - start local dev server
-- `npm run build` - build production files
-- `npm run preview` - preview production build
-- `npm run lint` - run ESLint
-- `npm run deploy` - publish `dist` to GitHub Pages
-
-## GitHub Pages
-
-The Vite base path is configured for:
-
-```txt
-/Example-3DAnimation/
-```
-
-To publish:
-
-```bash
-npm run deploy
-```
-
 ## Notes
 
 The 3D model attribution is listed in the footer.
+This is a demo project for portfolio purposes.

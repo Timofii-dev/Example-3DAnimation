@@ -57,7 +57,7 @@ function Model3D() {
     let animationId = null
 
     const loader = new GLTFLoader()
-    loader.load('/3dAnimation/2021_porsche_panamera_turbo_s_sport_turismo.glb', (gltf) => {
+    loader.load(`${import.meta.env.BASE_URL}3dAnimation/2021_porsche_panamera_turbo_s_sport_turismo.glb`, (gltf) => {
       console.log('✓ Модель загружена успешно!')
       
       model = gltf.scene

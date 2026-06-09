@@ -1,4 +1,4 @@
-const FLYLINE_IMAGE_URL = '/photo4k/image-1.jpeg'
+const FLYLINE_IMAGE_URL = `${import.meta.env.BASE_URL}photo4k/image-1.jpeg`
 
 function FlylineSection() {
   return (
