@@ -46709,7 +46709,7 @@ function Model3D() {
 		let model = null;
 		let time = 0;
 		let animationId = null;
-		new GLTFLoader().load("/3dAnimation/2021_porsche_panamera_turbo_s_sport_turismo.glb", (gltf) => {
+		new GLTFLoader().load(`/Example-3DAnimation/3dAnimation/2021_porsche_panamera_turbo_s_sport_turismo.glb`, (gltf) => {
 			console.log("✓ Модель загружена успешно!");
 			model = gltf.scene;
 			const box = new Box3().setFromObject(model);
@@ -50636,7 +50636,7 @@ function SpecsGrid() {
 }
 //#endregion
 //#region src/components/FlylineSection.jsx
-var FLYLINE_IMAGE_URL = "/photo4k/image-1.jpeg";
+var FLYLINE_IMAGE_URL = `/Example-3DAnimation/photo4k/image-1.jpeg`;
 function FlylineSection() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 		className: "relative min-h-[500px] md:min-h-[900px] flex items-center overflow-hidden",
@@ -50791,7 +50791,7 @@ function Footer() {
 				children: [
 					"3D model ",
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-						href: "https://sketchfab.com/3d-models",
+						href: "https://sketchfab.com/3d-models/2021-porsche-panamera-turbo-s-sport-turismo-f2269fdf74f64257a3a9b0872eb9b2d8",
 						target: "_blank",
 						rel: "noopener noreferrer",
 						className: "text-tertiary hover:text-white transition-colors",
@@ -50818,7 +50818,7 @@ function Footer() {
 					". Source:",
 					" ",
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-						href: "https://sketchfab.com",
+						href: "https://sketchfab.com/3d-models/2021-porsche-panamera-turbo-s-sport-turismo-f2269fdf74f64257a3a9b0872eb9b2d8",
 						target: "_blank",
 						rel: "noopener noreferrer",
 						className: "text-tertiary hover:text-white transition-colors",
