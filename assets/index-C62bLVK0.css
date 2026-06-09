@@ -1,0 +1,153 @@
+body {
+    background-color: #0e0e0e;
+    color: #e5e2e1;
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+.glass-panel {
+    background: rgba(28, 27, 27, 0.4);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel:hover {
+    box-shadow: 0 0 40px rgba(255, 179, 172, 0.1);
+    background: rgba(28, 27, 27, 0.7);
+    border-color: rgba(255, 179, 172, 0.4);
+}
+
+.scroll-reveal {
+    opacity: 0;
+}
+
+.studio-floor {
+    background: transparent;
+}
+
+#nav-bar {
+    transform: translateY(-100%);
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#nav-bar.visible {
+    transform: translateY(0);
+}
+
+.progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: #c6c6c6;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+#liquid-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.magnetic-wrap {
+    display: block;
+    perspective: 1000px;
+}
+
+.parallax-target {
+    will-change: transform;
+}
+
+/* Адаптивные переменные */
+:root {
+    --margin-desktop: 60px;
+    --margin-tablet: 40px;
+    --margin-mobile: 20px;
+    
+    --section-gap-desktop: 120px;
+    --section-gap-tablet: 80px;
+    --section-gap-mobile: 60px;
+    
+    --gutter-desktop: 48px;
+    --gutter-tablet: 32px;
+    --gutter-mobile: 16px;
+}
+
+@media (max-width: 1024px) {
+    :root {
+        --margin-desktop: var(--margin-tablet);
+        --section-gap-desktop: var(--section-gap-tablet);
+        --gutter-desktop: var(--gutter-tablet);
+    }
+}
+
+@media (max-width: 640px) {
+    :root {
+        --margin-desktop: var(--margin-mobile);
+        --section-gap-desktop: var(--section-gap-mobile);
+        --gutter-desktop: var(--gutter-mobile);
+    }
+}
+
+/* Адаптивные контейнеры */
+@media (max-width: 768px) {
+    .container-max {
+        max-width: 100%;
+    }
+    
+    .px-margin-desktop {
+        padding-left: var(--margin-tablet);
+        padding-right: var(--margin-tablet);
+    }
+}
+
+@media (max-width: 480px) {
+    .px-margin-desktop {
+        padding-left: var(--margin-mobile);
+        padding-right: var(--margin-mobile);
+    }
+}
+
+/* Оптимизация текста для мобильных */
+@media (max-width: 640px) {
+    h1, h2, h3 {
+        word-break: break-word;
+    }
+}
+
+/* Адаптивность для кнопок */
+@media (max-width: 640px) {
+    button {
+        padding: 12px 16px;
+        font-size: 12px;
+    }
+}
+
+/* Улучшение прикосновения для мобильных */
+@media (hover: none) and (pointer: coarse) {
+    button, a {
+        min-height: 44px;
+        min-width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
