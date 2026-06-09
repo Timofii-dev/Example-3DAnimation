@@ -50800,7 +50800,7 @@ function Footer() {
 					" by",
 					" ",
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-						href: "https://sketchfab.com/Ddiaz",
+						href: "https://sketchfab.com/ddiaz-design",
 						target: "_blank",
 						rel: "noopener noreferrer",
 						className: "text-tertiary hover:text-white transition-colors",
