@@ -1,4 +1,4 @@
-# Showcase
+# Example-3DAnimation
 
 Short landing page / 3D showcase for a Porsche Panamera-style car presentation.
 
@@ -23,6 +23,21 @@ npm run dev
 - `npm run build` - build production files
 - `npm run preview` - preview production build
 - `npm run lint` - run ESLint
+- `npm run deploy` - publish `dist` to GitHub Pages
+
+## GitHub Pages
+
+The Vite base path is configured for:
+
+```txt
+/Example-3DAnimation/
+```
+
+To publish:
+
+```bash
+npm run deploy
+```
 
 ## Notes
 

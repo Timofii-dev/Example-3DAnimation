@@ -1,7 +1,5 @@
 import Model3D from './Model3D'
 
-const HERO_IMAGE_URL = 'https://lh3.googleusercontent.com/aida-public/AB6AXuDsFGUsa5qnVN9VvUmS3eCj3zssA1NbVTtQx_RtC_n8bknIYxD6XbJ4wG5GH-_DjkC4XbdFrG86LulY8QW0PNgngIrm3k_MDlAv_tTUv8ksBmaUz4wEV9YcxeV3Kv11hNOX_bD64x4Yqsf17JHnNOxBFxR87vbIwlldHg3NzxWqpM_hVDJ6bH6cqKVCrEbEG_1ZIbXn8rHXPaLK_7DRPlKCxEDYR7_T5c4dIzk78qHAc812dHI9vmMhDPdPGmvAELn99zwYwTnzB5NK'
-
 function HeroSection() {
   return (
     <section

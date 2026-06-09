@@ -18,6 +18,7 @@ function Model3D() {
 
   useEffect(() => {
     if (!containerRef.current) return
+    const container = containerRef.current
 
     // Проверяем, это мобильное устройство
     const isMobile = window.innerWidth < 768
@@ -40,7 +41,7 @@ function Model3D() {
     const renderer = new THREE.WebGLRenderer({ antialias: true })
     renderer.setSize(window.innerWidth, window.innerHeight)
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
-    containerRef.current.appendChild(renderer.domElement)
+    container.appendChild(renderer.domElement)
 
     // Lights
     const ambientLight = new THREE.AmbientLight(0xffffff, 1)
@@ -170,26 +171,26 @@ function Model3D() {
       renderer.setSize(window.innerWidth, window.innerHeight)
     }
 
-    containerRef.current.addEventListener('mousemove', handleMouseMove)
-    containerRef.current.addEventListener('mousedown', handleMouseDown)
+    container.addEventListener('mousemove', handleMouseMove)
+    container.addEventListener('mousedown', handleMouseDown)
     window.addEventListener('mouseup', handleMouseUp)
-    containerRef.current.addEventListener('touchstart', handleTouchStart)
-    containerRef.current.addEventListener('touchmove', handleTouchMove)
+    container.addEventListener('touchstart', handleTouchStart)
+    container.addEventListener('touchmove', handleTouchMove)
     window.addEventListener('touchend', handleTouchEnd)
     window.addEventListener('resize', handleResize)
 
     // Cleanup
     return () => {
-      containerRef.current?.removeEventListener('mousemove', handleMouseMove)
-      containerRef.current?.removeEventListener('mousedown', handleMouseDown)
+      container.removeEventListener('mousemove', handleMouseMove)
+      container.removeEventListener('mousedown', handleMouseDown)
       window.removeEventListener('mouseup', handleMouseUp)
-      containerRef.current?.removeEventListener('touchstart', handleTouchStart)
-      containerRef.current?.removeEventListener('touchmove', handleTouchMove)
+      container.removeEventListener('touchstart', handleTouchStart)
+      container.removeEventListener('touchmove', handleTouchMove)
       window.removeEventListener('touchend', handleTouchEnd)
       window.removeEventListener('resize', handleResize)
       if (animationId) cancelAnimationFrame(animationId)
-      if (containerRef.current && renderer.domElement.parentNode === containerRef.current) {
-        containerRef.current.removeChild(renderer.domElement)
+      if (renderer.domElement.parentNode === container) {
+        container.removeChild(renderer.domElement)
       }
       renderer.dispose()
     }
