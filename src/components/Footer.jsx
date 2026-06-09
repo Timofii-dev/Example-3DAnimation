@@ -32,7 +32,7 @@ function Footer() {
       <div className="border-t border-outline-variant mt-8 pt-6 px-margin-desktop max-w-container-max mx-auto">
         <p className="text-on-surface-variant text-xs md:text-sm text-center">
           3D model <a href="https://sketchfab.com/3d-models/2021-porsche-panamera-turbo-s-sport-turismo-f2269fdf74f64257a3a9b0872eb9b2d8" target="_blank" rel="noopener noreferrer" className="text-tertiary hover:text-white transition-colors">"2021 Porsche Panamera Turbo S Sport Turismo"</a> by{' '}
-          <a href="https://sketchfab.com/Ddiaz" target="_blank" rel="noopener noreferrer" className="text-tertiary hover:text-white transition-colors">Ddiaz Design</a>
+          <a href="https://sketchfab.com/ddiaz-design" target="_blank" rel="noopener noreferrer" className="text-tertiary hover:text-white transition-colors">Ddiaz Design</a>
           , licensed under{' '}
           <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer" className="text-tertiary hover:text-white transition-colors">
             CC BY 4.0
